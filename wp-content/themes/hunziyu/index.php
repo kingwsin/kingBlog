@@ -110,8 +110,8 @@ get_header();
     
 <?php
 $args=array(
-  'post_type'=>'page',//查找出所有页面（多个结果集，复数）
-  'page_id'=>16//仅仅查询id号为16的页面，只有一个结果，单数
+  'post_type'=>'post',//查找出所有页面（多个结果集，复数）
+  'page_id'=>5//仅仅查询id号为16的页面，只有一个结果，单数
 );
 // 实例化wp_query
 $the_query = new WP_Query( $args );
@@ -157,7 +157,7 @@ $the_query = new WP_Query( $args );
 
 // 开始循环
 if ( $the_query->have_posts() ) {//如果找到了结果，便输出以下内容
-       
+
 	while ( $the_query->have_posts() ) {//再次判断是否有结果
 		$the_query->the_post();//不用问为什么，每次都要写这个；
 		//这里开始输出你想要的模板标签
@@ -264,7 +264,7 @@ wp_reset_postdata();//不用问为什么，每次都记得写就好
                 	<img src="<?php bloginfo('template_url');?>/images/temp/temp_img_3.jpg" alt="" width="230" height="143" class="alignright" />
                 	<h3>Statistics</h3>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    
+
                 	<div class="clear"></div>
                     </div>
                 </div>

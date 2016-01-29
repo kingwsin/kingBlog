@@ -21,9 +21,9 @@
 
 <script type="text/javascript" language="javascript" src="<?php bloginfo('template_url');?>/js/general.js"></script>
 <!--第一种方式-->
-<!--<script type="text/javascript" language="javascript" src="<?php //bloginfo('template_url');?>/js/jquery.easing.1.3.js"></script>-->
+<script type="text/javascript" language="javascript" src="<?php bloginfo('template_url');?>/js/jquery.easing.1.3.js"></script>
 <!--第二种方式-->
-<?php wp_enqueue_scripts('easing_js',get_bloginfo('template_url').'/js/jquery.easing.1.3.js')?>
+<?php //wp_enqueue_scripts('jquery.easing.1.3_js',get_bloginfo('template_url').'/js/jquery.easing.1.3.js')?>
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/css/home.css" />	
 <script type="text/javascript" language="javascript" src="<?php bloginfo('template_url');?>/js/home.js"></script>
